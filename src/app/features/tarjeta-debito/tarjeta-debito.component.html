@@ -1,0 +1,74 @@
+<div class="debit-card rounded-xl shadow-lg p-4 w-72">
+  <!-- Título -->
+  <div class="card-title font-bold mb-2 tracking-wide">BancoTec</div>
+  <!-- Chip de la tarjeta -->
+  <div class="card-logos mb-3">
+    <div class="card-logo-main">
+      <div class="card-chip-lines">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- Número de tarjeta -->
+  <div class="flex gap-2 mb-2">
+    <input
+      placeholder="XXXX"
+      class="card-input rounded px-2 py-1 w-12 text-center font-mono"
+      maxlength="4"
+      (input)="soloNumeros($event)"
+    />
+    <input
+      placeholder="XXXX"
+      class="card-input rounded px-2 py-1 w-12 text-center font-mono"
+      maxlength="4"
+      (input)="soloNumeros($event)"
+    />
+    <input
+      placeholder="XXXX"
+      class="card-input rounded px-2 py-1 w-12 text-center font-mono"
+      maxlength="4"
+      (input)="soloNumeros($event)"
+    />
+    <input
+      placeholder="XXXX"
+      class="card-input rounded px-2 py-1 w-12 text-center font-mono"
+      maxlength="4"
+      (input)="soloNumeros($event)"
+    />
+  </div>
+  <!-- Día y Año -->
+  <div class="flex gap-2 mb-2">
+    <div>
+      <div class="card-label">MES</div>
+      <select title="Mes" class="card-select">
+        <option>01</option>
+        <option>02</option>
+        <option>03</option>
+        <option>04</option>
+        <option>05</option>
+        <option>06</option>
+        <option>07</option>
+        <option>08</option>
+        <option>09</option>
+        <option>10</option>
+        <option>11</option>
+        <option>12</option>
+      </select>
+    </div>
+    <div>
+      <div class="card-label">AÑO</div>
+      <select title="Año" class="card-select">
+        <option *ngFor="let year of years">
+          {{ year % 100 | number : "2.0" }}
+        </option>
+      </select>
+    </div>
+    <!-- Logos -->
+    <div class="card-logos ml-auto">
+      <div class="card-logo-circle1"></div>
+      <div class="card-logo-circle2"></div>
+    </div>
+  </div>
+</div>

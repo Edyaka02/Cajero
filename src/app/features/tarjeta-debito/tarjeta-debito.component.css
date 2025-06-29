@@ -1,0 +1,139 @@
+.debit-card {
+  background: linear-gradient(135deg, #232526 0%, #414345 100%);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  width: 320px;
+}
+
+.card-title {
+  color: #ffffffd8;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.card-input {
+  background: #2d2f36;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 10px;
+  width: 52px;
+  text-align: center;
+  font-family: monospace;
+  margin-right: 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.card-label {
+  color: #b0b3b8;
+  font-size: 0.7rem;
+}
+
+.card-select {
+  background: #2d2f36;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 3px 8px;
+  margin-right: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.card-logos {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* .card-logo-main {
+  background: #d59c15;
+  border-radius: 6px;
+  width: 36px;
+  height: 28px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+} */
+
+.card-logo-circle1 {
+  background: #ffd700;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  left: 0;
+  border: 2px solid #232526;
+}
+
+.card-logo-circle2 {
+  background: #00c3ff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  left: -15px;
+  border: 2px solid #232526;
+}
+
+.card-name {
+  color: #fff;
+  font-size: 1rem;
+  margin-top: 16px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+
+.card-logo-main {
+  background: linear-gradient(135deg, #e1c16e 60%, #b8860b 100%);
+  border-radius: 6px;
+  width: 36px;
+  height: 28px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  position: relative;
+  border: 2px solid #fffbe6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.card-logo-main::before,
+.card-logo-main::after {
+  content: '';
+  position: absolute;
+  left: 8px;
+  right: 8px;
+  height: 2px;
+  background: #fffbe6;
+  border-radius: 1px;
+}
+
+.card-logo-main::before {
+  top: 8px;
+}
+
+.card-logo-main::after {
+  bottom: 8px;
+}
+
+.card-chip-lines {
+  position: absolute;
+  top: 4px;
+  bottom: 4px;
+  left: 12px;
+  right: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.card-chip-lines span {
+  display: block;
+  height: 2px;
+  background: #fffbe6;
+  opacity: 0.7;
+  border-radius: 1px;
+}

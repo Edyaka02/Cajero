@@ -1,0 +1,17 @@
+<!-- Pantalla -->
+<!-- <div
+  class="bg-blue-100 border-4 border-black rounded-lg h-80 w-160 flex flex-col justify-center items-center mb-4"
+>
+  <app-bienvenida
+    *ngIf="pantallaActual === 'bienvenida'"
+    (continuar)="cambiarPantalla('pin')"
+  >
+  </app-bienvenida>
+</div> -->
+<div class="flex items-center justify-center bg-gray-800 p-2 rounded">
+  <!-- Contenido de tu componente aquí -->
+  <div class="bg-white rounded-lg w-160 h-100">
+    <app-bienvenida *ngIf="pantallaActual === 'bienvenida'" (continuar)="cambiarPantalla('pin')">
+    </app-bienvenida>
+  </div>
+</div>

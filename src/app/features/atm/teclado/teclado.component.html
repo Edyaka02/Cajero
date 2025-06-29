@@ -1,0 +1,51 @@
+<div class="flex justify-center items-start bg-gray-800 p-2 rounded">
+  <div class="grid grid-cols-3 gap-2">
+    <button aria-label="teclado-1" class="bg-gray-300 rounded p-2 font-bold w-10 h-10" (click)="onKeyPress('1')">
+      <i class="fa-solid fa-1"></i>
+    </button>
+    <button aria-label="teclado-2" class="bg-gray-300 rounded p-2 font-bold w-10 h-10" (click)="onKeyPress('2')">
+      <i class="fa-solid fa-2"></i>
+    </button>
+    <button aria-label="teclado-3" class="bg-gray-300 rounded p-2 font-bold w-10 h-10" (click)="onKeyPress('3')">
+      <i class="fa-solid fa-3"></i>
+    </button>
+    <button aria-label="teclado-4" class="bg-gray-300 rounded p-2 font-bold w-10 h-10" (click)="onKeyPress('4')">
+      <i class="fa-solid fa-4"></i>
+    </button>
+    <button aria-label="teclado-5" class="bg-gray-300 rounded p-2 font-bold w-10 h-10" (click)="onKeyPress('5')">
+      <i class="fa-solid fa-5"></i>
+    </button>
+    <button aria-label="teclado-6" class="bg-gray-300 rounded p-2 font-bold w-10 h-10" (click)="onKeyPress('6')">
+      <i class="fa-solid fa-6"></i>
+    </button>
+    <button aria-label="teclado-7" class="bg-gray-300 rounded p-2 font-bold w-10 h-10" (click)="onKeyPress('7')">
+      <i class="fa-solid fa-7"></i>
+    </button>
+    <button aria-label="teclado-8" class="bg-gray-300 rounded p-2 font-bold w-10 h-10" (click)="onKeyPress('8')">
+      <i class="fa-solid fa-8"></i>
+    </button>
+    <button aria-label="teclado-9" class="bg-gray-300 rounded p-2 font-bold w-10 h-10" (click)="onKeyPress('9')">
+      <i class="fa-solid fa-9"></i>
+    </button>
+    <div></div>
+    <button aria-label="teclado-0" class="bg-gray-300 rounded p-2 font-bold w-10 h-10" (click)="onKeyPress('0')">
+      <i class="fa-solid fa-0"></i>
+    </button>
+    <div></div>
+  </div>
+
+  <div class="flex flex-col gap-2 ml-6">
+    <button aria-label="teclado-canelar" class="bg-red-700 text-white rounded px-4 py-2 font-bold flex-1"
+      (click)="onKeyPress('CANCEL')">
+      <i class="fa-solid fa-x"></i>
+    </button>
+    <button aria-label="teclado-corregir" class="bg-yellow-500 text-white rounded px-4 py-2 font-bold flex-1"
+      (click)="onKeyPress('CORR')">
+      <i class="fa-solid fa-chevron-left"></i>
+    </button>
+    <button aria-label="teclado-ok" class="bg-green-700 text-white rounded px-4 py-2 font-bold flex-1"
+      (click)="onKeyPress('OK')">
+      <i class="fa-solid fa-circle-notch"></i>
+    </button>
+  </div>
+</div>
