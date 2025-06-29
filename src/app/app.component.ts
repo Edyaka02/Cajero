@@ -6,6 +6,8 @@ import { LayoutCajeroComponent } from './shared/layout-cajero/layout-cajero.comp
 import { TarjetaDebitoComponent } from './features/tarjeta-debito/tarjeta-debito.component';
 import { DispensadorBilletesComponent } from './features/atm/dispensador-billetes/dispensador-billetes.component';
 import { DispensadorComprobanteComponent } from './features/atm/dispensador-comprobante/dispensador-comprobante.component';
+import { LectorTarjetaComponent } from './features/atm/lector-tarjeta/lector-tarjeta.component';
+
 
 @Component({
   selector: 'app-root',
@@ -16,7 +18,8 @@ import { DispensadorComprobanteComponent } from './features/atm/dispensador-comp
     LayoutCajeroComponent,
     TarjetaDebitoComponent,
     DispensadorBilletesComponent,
-    DispensadorComprobanteComponent
+    DispensadorComprobanteComponent,
+    LectorTarjetaComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
